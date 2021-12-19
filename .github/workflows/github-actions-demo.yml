@@ -17,11 +17,18 @@ jobs:
     runs-on: ubuntu-latest
     #welche einzelnen Schritte sollen ausgeführt werden?
     steps:
-    #Benennung des Schritts (was passiert bei diesem Schritt?)
-      - name: 1. Checkout 2. Install Python 3. Install PyBuilder 4. Run Build
-      #Anwendung des Addons von Marketplace
-        uses: pybuilder/build@master
-        #Änderung einer Spezifikation
-        with: 
-          pyb-command: pyb package
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+      - name: Setup Python
+        uses: actions/setup-python@v2.3.1
+      - id: step2
+        run: py -m virtualenv venv
+      - id: step3
+        run: cd Scripts
+      - id: step4
+        run: activate.bat
+      - id: step5
+        run: py -m pip install pybuilder
+      - id: step6
+        run: pyb package
         
