@@ -21,14 +21,7 @@ jobs:
         uses: actions/checkout@v2.4.0
       - name: Setup Python
         uses: actions/setup-python@v2.3.1
-      - id: step1
-        run: python -m pip install virtualenv
-      - id: step2
-        run: python -m virtualenv venv
-      - id: step3
-        run: cd venv/Scripts
-      - id: step4
-        run: activate.bat
+      
       - id: step5
         run: python -m pip install pybuilder
       - id: step6
