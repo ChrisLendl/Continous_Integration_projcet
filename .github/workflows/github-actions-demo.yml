@@ -22,13 +22,13 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.3.1
       - id: step2
-        run: py -m virtualenv venv
+        run: python -m virtualenv venv
       - id: step3
         run: cd Scripts
       - id: step4
         run: activate.bat
       - id: step5
-        run: py -m pip install pybuilder
+        run: python -m pip install pybuilder
       - id: step6
         run: pyb package
         
