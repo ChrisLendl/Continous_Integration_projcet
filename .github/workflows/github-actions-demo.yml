@@ -21,9 +21,8 @@ jobs:
         uses: actions/checkout@v2.4.0
       - name: Setup Python
         uses: actions/setup-python@v2.3.1
-      
-      - id: step5
+      - id: manuelle pyBuilder Installation
         run: python -m pip install pybuilder
-      - id: step6
+      - id: Ausfuehrung pyBuilder
         run: pyb package
         
