@@ -1,0 +1,10 @@
+Collecting Mock
+  Using cached mock-4.0.3-py3-none-any.whl (28 kB)
+Installing collected packages: Mock
+Successfully installed Mock-4.0.3
+ERROR: Could not find a version that satisfies the requirement unittest (from versions: none)
+ERROR: No matching distribution found for unittest
+Collecting twitter
+  Downloading twitter-1.19.3-py2.py3-none-any.whl (50 kB)
+Installing collected packages: twitter
+Successfully installed twitter-1.19.3

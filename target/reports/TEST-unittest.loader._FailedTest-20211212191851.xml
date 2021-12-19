@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittest.loader._FailedTest-20211212191851" tests="1" file="unittest/loader.py" time="0.005" timestamp="2021-12-12T19:18:51" failures="0" errors="1" skipped="0">
+	<testcase classname="unittest.loader._FailedTest" name="build_main_file_tests" time="0.005" timestamp="2021-12-12T19:18:51">
+		<error type="ImportError" message="Failed to import test module: build_main_file_tests
+Traceback (most recent call last):
+  File &quot;C:\Users\Christian Lendl\AppData\Local\Programs\Python\Python310\lib\unittest\loader.py&quot;, line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File &quot;c:\users\christian lendl\desktop\wintersemester_21_22\moderne_softwareentwicklung\aufgabe_04\aufgabe_build\src\unittest\python\build_main_file_tests.py&quot;, line 3, in &lt;module&gt;
+    import buildmainfile
+  File &quot;c:\users\christian lendl\desktop\wintersemester_21_22\moderne_softwareentwicklung\aufgabe_04\aufgabe_build\src\unittest\python\buildmainfile.py&quot;, line 2, in &lt;module&gt;
+    import twitter   # pip install python-twitter
+ModuleNotFoundError: No module named 'twitter'
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Christian Lendl\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+  File "C:\Users\Christian Lendl\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\Christian Lendl\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "C:\Users\Christian Lendl\AppData\Local\Programs\Python\Python310\lib\unittest\loader.py", line 34, in testFailure
+    raise self._exception
+ImportError: Failed to import test module: build_main_file_tests
+Traceback (most recent call last):
+  File "C:\Users\Christian Lendl\AppData\Local\Programs\Python\Python310\lib\unittest\loader.py", line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File "c:\users\christian lendl\desktop\wintersemester_21_22\moderne_softwareentwicklung\aufgabe_04\aufgabe_build\src\unittest\python\build_main_file_tests.py", line 3, in <module>
+    import buildmainfile
+  File "c:\users\christian lendl\desktop\wintersemester_21_22\moderne_softwareentwicklung\aufgabe_04\aufgabe_build\src\unittest\python\buildmainfile.py", line 2, in <module>
+    import twitter   # pip install python-twitter
+ModuleNotFoundError: No module named 'twitter'
+
+]]></error>
+	</testcase>
+</testsuite>
