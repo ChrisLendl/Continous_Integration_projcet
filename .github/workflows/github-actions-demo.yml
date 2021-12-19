@@ -11,4 +11,6 @@ jobs:
     steps:
       - name: 1. Checkout 2. Install Python 3. Install PyBuilder 4. Run Build
         uses: pybuilder/build@master
+        with: 
+          pyb-command: pyb package
         
