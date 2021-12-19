@@ -1,16 +1,27 @@
-name: CI_python_project 
+#Name für den Workflow
+name: CI_python_project
+
 on:
+#Workflow wird für neue Daten, welche ins Repository hochgeladen werden automatisch ausgeführt
   push:
     branches:
+    #Hauptbranch
     - main
+    #auch manuelle Ausführung des Workflows möglich
   workflow_dispatch:
 jobs:
+#wie heisst der Job?
   build_job:
     name: build_python_project
+    #auf welcher Betriebssystemversion läuft dieser Workflow?
     runs-on: ubuntu-latest
+    #welche einzelnen Schritte sollen ausgeführt werden?
     steps:
+    #Benennung des Schritts (was passiert bei diesem Schritt?)
       - name: 1. Checkout 2. Install Python 3. Install PyBuilder 4. Run Build
+      #Anwendung des Addons von Marketplace
         uses: pybuilder/build@master
+        #Änderung einer Spezifikation
         with: 
           pyb-command: pyb package
         
