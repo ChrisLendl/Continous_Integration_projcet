@@ -16,7 +16,7 @@ class TweetTest(unittest.TestCase):
     def test_example2(self):
         """another test"""
         mock_twitter = Mock()
-        buildmainfile.tweet(mock_twitter, "Hello this is a message")
+        buildmainfile.tweet(mock_twitter, "message")
         mock_twitter.PostUpdate.assert_called_with("message")
 
 
